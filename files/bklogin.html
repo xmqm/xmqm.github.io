@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="µÇÂ¼½çÃæ.css">
+</head>
+<body>
+<div class="login" align="center">
+<h1>Welcome</h1>
+<div class="text">
+<i class="fa fa-user-o" aria-hidden="true"></i><!-- Font Awesome -->
+<input type="text" placeholder="Username" id="name">
+</div>
+<div class="text">
+<i class="fa fa-lock" aria-hidden="true"></i><!-- Font Awesome -->
+<input type="password" placeholder="Password" id="pass">
+</div>
+<button onclick="login()">Login</button>
+</div>
+</body>
+<script type="text/javascript">
+function login(){
+var username = document.getElementById("name").value;
+var password = document.getElementById("pass").value;
+if(username=="123456" && password=="123456"){
+alert("Login Successfully");
+window.location.href = "bookmarks.html";
+return false;
+}
+else{
+alert("WRONG");
+window.location.href= "../index.html";
+return false;
+}
+}
+</script>
+</html>
